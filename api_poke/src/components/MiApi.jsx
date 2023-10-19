@@ -1,6 +1,6 @@
 import  { useState, useEffect } from "react";
 import Card from "react-bootstrap/Card";
-import Buscador from "./Buscador"; // Importa el componente Buscador
+import Buscador from "./Buscador";
 
 function PokemonLandingPage() {
   const [topAttackPokemon, setTopAttackPokemon] = useState([]);
