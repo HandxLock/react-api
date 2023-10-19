@@ -15,8 +15,6 @@ function PokemonLandingPage() {
         );
         const data = await response.json();
         const pokemonList = data.results;
-
-        // Obtener detalles de estadísticas de ataque para cada Pokémon
         const pokemonDetails = await Promise.all(
           pokemonList.map(async (pokemon) => {
             const response = await fetch(pokemon.url);
